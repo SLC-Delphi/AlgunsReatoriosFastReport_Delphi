@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.2.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41656,6924247685" ReportOptions.Description.Text="" ReportOptions.LastChange="43131,8844989468" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBD_MAPA" DataSetName="frxDBD_MAPA"/>
+    <item DataSet="frxDBDS_Empresa" DataSetName="frxDBDS_Empresa"/>
+    <item DataSet="frxDBDS_MAPAIPED_IT" DataSetName="frxDBDS_MAPAIPED_IT"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="11" RightMargin="15" TopMargin="11" BottomMargin="11" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="53,03154" Left="0" Top="18,89765" Width="1024,25263">
+      <TfrxGradientView Name="Gradient2" Left="7,55906" Top="3,77953" Width="332,59864" Height="49,13389" BeginColor="15987699" EndColor="12632256" Style="gsVertical" Color="14342874"/>
+      <TfrxMemoView Name="frxDBDS_empresaFANTASIA" Left="347,71676488" Top="0" Width="377,95275591" Height="18,89765" DataSet="OR_VENDAS.frxDBDataset1" DataSetName="frxDBDS_empresa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxDBDS_Empresa.&#34;FANTASIA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_empresaCNPJ" Left="343,93723488" Top="18,89765" Width="377,95275591" Height="18,89765" DataSet="OR_VENDAS.frxDBDataset1" DataSetName="frxDBDS_empresa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBDS_Empresa.&#34;CNPJ&#34;]"/>
+      <TfrxMemoView Name="frxMemoView1" Left="18,89777204" Top="17,40947079" Width="309,92121591" Height="27,21259843" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="MAPA DE PRODUÇÃO"/>
+      <TfrxMemoView Name="Date" Left="839,05538417" Top="31,01577" Width="60,47244094" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Time" Left="918,42547512" Top="29,23624" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="[Time]"/>
+      <TfrxLineView Name="Line2" Left="340,1577" Top="53,03154" Width="676,53587" Height="0" Color="0" Frame.Color="12632256" Frame.Typ="4" Frame.Width="1,5"/>
+    </TfrxPageHeader>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="89,57479583" Left="0" Top="132,28355" Width="1024,25263" Condition="&#60;frxDBD_MAPA.&#34;NUMERO&#34;&#62;">
+      <TfrxGradientView Name="Gradient3" Left="7,55906" Top="0" Width="332,59864" Height="41,57483" BeginColor="12632256" EndColor="12632256" Style="gsVertical" Color="12632256"/>
+      <TfrxShapeView Name="Shape2" Left="30,23624" Top="7,55905999999999" Width="283,46456693" Height="27,21259843" Curve="2" Fill.BackColor="16777215" Frame.Color="536870911" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="Memo3" Left="342,93723" Top="1,91338827000001" Width="170,07885" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="DATA DO LANÇAMENTO:"/>
+      <TfrxMemoView Name="Memo5" Left="342,93723" Top="22,45671" Width="340,1577" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="DATA PREVISTA PARA O TÉRMINO DA PRODUÇÃO:"/>
+      <TfrxMemoView Name="Memo7" Left="3,77953" Top="45,25201" Width="102,04731" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="OBSERVAÇÃO:"/>
+      <TfrxMemoView Name="Memo8" Left="260,78757" Top="72,16543" Width="56,69295" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" Text="CÓDIGO"/>
+      <TfrxMemoView Name="Memo9" Left="805,03989" Top="72,16543" Width="86,92919" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" WordWrap="False" Text="QUANTIDADE"/>
+      <TfrxMemoView Name="frxDBDS_MAPADATA" Left="518,30682055" Top="1,91338827000001" Width="79,37013" Height="18,89765" DataSetName="frxDBDS_MAPA" Text="[frxDBD_MAPA.&#34;DATA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_MAPAPREVISAO" Left="688,21305" Top="22,45671" Width="185,19697" Height="18,89765" DataSetName="frxDBDS_MAPA" Text="[frxDBD_MAPA.&#34;PREVISAO&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_MAPAOBS" Left="120,94496" Top="45,25201" Width="899,52777874" Height="22,67718" DataSetName="frxDBDS_MAPA" Text="[frxDBD_MAPA.&#34;OBS&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="370,39394" Top="72,16543" Width="86,92919" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" WordWrap="False" Text="PRODUTO:"/>
+      <TfrxMemoView Name="Memo11" Left="907,0872" Top="72,16543" Width="113,3859" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" Text="APONTAMENTO"/>
+      <TfrxMemoView Name="Memo10" Left="102,04731" Top="72,16543" Width="120,94496" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" Text="PEDIDO COMERCIAL"/>
+      <TfrxMemoView Name="Memo1" Left="48,13389" Top="11,33859" Width="192,75603" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="Nº DO MAPA DE PRODUÇÃO:"/>
+      <TfrxMemoView Name="frxDBDS_MAPANUMERO" Left="243,78757" Top="11,33859" Width="56,69295" Height="18,89765" DataSetName="frxDBDS_MAPA" Text="[frxDBD_MAPA.&#34;NUMERO&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="0" Top="71,81107" Width="86,92919" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="1" ParentFont="False" WordWrap="False" Text="PREVISÃO"/>
+    </TfrxGroupHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="127,28355" Left="0" Top="328,81911" Width="1024,25263" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDS_MAPAIPED_IT" DataSetName="frxDBDS_MAPAIPED_IT" RowCount="0">
+      <TfrxGradientView Name="Gradient1" Left="249,44898" Top="1,669295" Width="657,63778063" Height="17,007885" BeginColor="16119285" EndColor="15987699" Style="gsVertical" Color="16053492"/>
+      <TfrxMemoView Name="frxDBDS_PEDIDOPRODPRODCODPROD" Left="253,22851" Top="2,61418238" Width="105,82675457" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBDS_MAPAIPED_IT.&#34;CODPROD&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_PEDIDOPRODPRODQUANTIDADE" Left="816,37848" Top="2,61418238" Width="86,92913386" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxDBDS_MAPAIPED_IT.&#34;QUANTIDADE&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_PEDIDOPRODPRODPRODUTO" Left="370,39394" Top="2,61418238" Width="434,6456815" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" VAlign="vaCenter" Text="[frxDBDS_MAPAIPED_IT.&#34;PRODUTO&#34;]"/>
+      <TfrxMemoView Name="Memo4" Left="919,41002" Top="0" Width="105,82684" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="______________"/>
+      <TfrxMemoView Name="Memo2" Left="124,72449" Top="2,77953" Width="94,48819386" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxDBDS_MAPAIPED_IT.&#34;PED_ORIGINAL&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="3,77953" Top="22,45671" Width="362,83482386" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxDBDS_MAPAIPED_IT.&#34;CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="370,39394" Top="22,45671" Width="650,07910386" Height="79,37012024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[frxDBDS_MAPAIPED_IT.&#34;OBS_PROD&#34;]"/>
+      <TfrxLineView Name="Line1" Left="11,33859" Top="112,16543" Width="1016,69357" Height="0" Color="0" Frame.Color="12632256" Frame.Typ="4" Frame.Width="1,5"/>
+      <TfrxMemoView Name="Memo18" Left="3,77953" Top="3,77953" Width="105,82675457" Height="15,11811024" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBDS_MAPAIPED_IT.&#34;PREVISAO&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="5,66929134" Left="0" Top="245,66945" Width="1024,25263" Condition="frxDBDS_MAPAIPED_IT.&#34;COR&#34;"/>
+    <TfrxGroupHeader Name="GroupHeader3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="30,45671" Left="0" Top="275,90569" Width="1024,25263" Condition="frxDBDS_MAPAIPED_IT.&#34;TAMANHO&#34;">
+      <TfrxMemoView Name="frxDBDS_PEDIDOPRODPRODCOR" Left="0,42517" Top="9,33859" Width="668,97668795" Height="18,89765" DataSetName="frxDBDS_MAPAITENS" Font.Charset="1" Font.Color="12632256" Font.Height="-16" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[&#60;frxDBDS_MAPAIPED_IT.&#34;COR&#34;&#62; + '  /  '+&#60;frxDBDS_MAPAIPED_IT.&#34;TAMANHO&#34;&#62;]"/>
+      <TfrxLineView Name="Line5" Left="0" Top="7,55905999999999" Width="1024,25263" Height="0" Color="0" Diagonal="True"/>
+      <TfrxLineView Name="Line3" Left="-3,77953" Top="30,23624" Width="219,21274" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxGroupHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="517,79561" Width="1024,25263">
+      <TfrxMemoView Name="Memo13" Left="3,77953" Top="15,11812" Width="120,94496" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="TÉRMINO:"/>
+      <TfrxLineView Name="Line6" Left="132,28355" Top="33,7953" Width="317,48052" Height="0" Color="0" Frame.Style="fsDot" Frame.Typ="4"/>
+    </TfrxPageFooter>
+    <TfrxMemoView Name="Memo15" Left="918,42579488" Top="7,55906" Width="49,13389" Height="18,89765" Text="Página:"/>
+    <TfrxMemoView Name="Memo14" Left="975,11874488" Top="7,55906" Width="45,35436" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" WordWrap="False" Text="[Page]"/>
+  </TfrxReportPage>
+</TfrxReport>

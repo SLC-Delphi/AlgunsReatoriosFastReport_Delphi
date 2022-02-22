@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.2.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43117,6002767593" ReportOptions.Description.Text="" ReportOptions.LastChange="43117,6104597454" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset2" DataSetName="frxDBclientes"/>
+    <item DataSet="frxDBDataset1" DataSetName="frxDBempresa"/>
+    <item DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="181,41744" Left="0" Top="18,89765" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBempresa" RowCount="0">
+      <TfrxMemoView Name="frxDBempresaEMPRESA" Left="52,91342" Top="3,77953" Width="400,63018" Height="18,89765" DataField="EMPRESA" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;EMPRESA&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaENDERECO" Left="52,91342" Top="30,23624" Width="400,63018" Height="18,89765" DataField="ENDERECO" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;ENDERECO&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaNUMERO" Left="472,44125" Top="30,23624" Width="79,37013" Height="18,89765" DataField="NUMERO" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;NUMERO&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaCOMPLEMENTO" Left="52,91342" Top="52,91342" Width="400,63018" Height="18,89765" DataField="COMPLEMENTO" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;COMPLEMENTO&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaBAIRRO" Left="52,91342" Top="79,37013" Width="400,63018" Height="18,89765" DataField="BAIRRO" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;BAIRRO&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaCIDADE" Left="52,91342" Top="98,26778" Width="400,63018" Height="18,89765" DataField="CIDADE" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;CIDADE&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaESTADO" Left="476,22078" Top="98,26778" Width="158,74026" Height="18,89765" DataField="ESTADO" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;ESTADO&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaTELEFONE" Left="52,91342" Top="117,16543" Width="158,74026" Height="18,89765" DataField="TELEFONE" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;TELEFONE&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaMAIL" Left="52,91342" Top="136,06308" Width="400,63018" Height="18,89765" DataField="MAIL" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;MAIL&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaCNPJ" Left="52,91342" Top="158,74026" Width="158,74026" Height="18,89765" DataField="CNPJ" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;CNPJ&#34;]"/>
+      <TfrxMemoView Name="frxDBempresaINSC" Left="272,12616" Top="158,74026" Width="158,74026" Height="18,89765" DataField="INSC" DataSet="frxDBDataset1" DataSetName="frxDBempresa" Text="[frxDBempresa.&#34;INSC&#34;]"/>
+    </TfrxDetailData>
+    <TfrxDetailData Name="DetailData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="200,31509" Left="0" Top="222,99227" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset2" DataSetName="frxDBclientes" RowCount="0">
+      <TfrxMemoView Name="frxDBclientesCLIENTE" Left="56,69295" Top="11,33859" Width="400,63018" Height="18,89765" DataField="CLIENTE" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;CLIENTE&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesENDERECO" Left="56,69295" Top="37,7953" Width="400,63018" Height="18,89765" DataField="ENDERECO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;ENDERECO&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesNUMERO" Left="487,55937" Top="37,7953" Width="79,37013" Height="18,89765" DataField="NUMERO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;NUMERO&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesCOMPLEMENTO" Left="56,69295" Top="64,25201" Width="400,63018" Height="18,89765" DataField="COMPLEMENTO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;COMPLEMENTO&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesCIDADE" Left="60,47248" Top="86,92919" Width="400,63018" Height="18,89765" DataField="CIDADE" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;CIDADE&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesBAIRRO" Left="60,47248" Top="109,60637" Width="321,26005" Height="18,89765" DataField="BAIRRO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;BAIRRO&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesCEP" Left="578,26809" Top="109,60637" Width="79,37013" Height="18,89765" DataField="CEP" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;CEP&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesESTADO" Left="396,85065" Top="109,60637" Width="158,74026" Height="18,89765" DataField="ESTADO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;ESTADO&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesTELEFONE" Left="60,47248" Top="132,28355" Width="158,74026" Height="18,89765" DataField="TELEFONE" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;TELEFONE&#34;]"/>
+      <TfrxMemoView Name="frxDBclientesOBSERVACAO" Left="56,69295" Top="154,96073" Width="400,63018" Height="18,89765" DataField="OBSERVACAO" DataSet="frxDBDataset2" DataSetName="frxDBclientes" Text="[frxDBclientes.&#34;OBSERVACAO&#34;]"/>
+    </TfrxDetailData>
+    <TfrxDetailData Name="DetailData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="445,98454" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" RowCount="0"/>
+    <TfrxMemoView Name="frxDBmerc_depLOTE" Left="34,01577" Top="483,77984" Width="79,37013" Height="18,89765" DataField="LOTE" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;LOTE&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depSAFRA" Left="128,50402" Top="483,77984" Width="79,37013" Height="18,89765" DataField="SAFRA" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;SAFRA&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depCONDICAO" Left="222,99227" Top="483,77984" Width="400,63018" Height="18,89765" DataField="CONDICAO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;CONDICAO&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depTIPO" Left="34,01577" Top="510,23655" Width="400,63018" Height="18,89765" DataField="TIPO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;TIPO&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depCLIENTE" Left="34,01577" Top="536,69326" Width="400,63018" Height="18,89765" DataField="CLIENTE" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;CLIENTE&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depBEBIDA" Left="34,01577" Top="566,9295" Width="400,63018" Height="18,89765" DataField="BEBIDA" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;BEBIDA&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depASPECTO" Left="34,01577" Top="593,38621" Width="400,63018" Height="18,89765" DataField="ASPECTO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;ASPECTO&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depUMIDADE" Left="483,77984" Top="593,38621" Width="158,74026" Height="18,89765" DataField="UMIDADE" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;UMIDADE&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depP18" Left="34,01577" Top="623,62245" Width="158,74026" Height="18,89765" DataField="P18" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;P18&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depP17" Left="34,01577" Top="650,07916" Width="158,74026" Height="18,89765" DataField="P17" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;P17&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depP16" Left="34,01577" Top="676,53587" Width="158,74026" Height="18,89765" DataField="P16" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;P16&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depPMK" Left="34,01577" Top="702,99258" Width="158,74026" Height="18,89765" DataField="PMK" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;PMK&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depP15" Left="222,99227" Top="623,62245" Width="158,74026" Height="18,89765" DataField="P15" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;P15&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depP14_13" Left="222,99227" Top="650,07916" Width="158,74026" Height="18,89765" DataField="P14_13" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;P14_13&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depF13" Left="222,99227" Top="676,53587" Width="158,74026" Height="18,89765" DataField="F13" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;F13&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depF10" Left="219,21274" Top="706,77211" Width="158,74026" Height="18,89765" DataField="F10" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;F10&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depCATACAO" Left="457,32313" Top="623,62245" Width="158,74026" Height="18,89765" DataField="CATACAO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;CATACAO&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depIMPURESA" Left="457,32313" Top="650,07916" Width="158,74026" Height="18,89765" DataField="IMPURESA" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;IMPURESA&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depDEFEITO" Left="453,5436" Top="676,53587" Width="158,74026" Height="18,89765" DataField="DEFEITO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;DEFEITO&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depCONFERENTE" Left="37,7953" Top="740,78788" Width="400,63018" Height="18,89765" DataField="CONFERENTE" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;CONFERENTE&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depPROVADOR" Left="37,7953" Top="771,02412" Width="400,63018" Height="18,89765" DataField="PROVADOR" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;PROVADOR&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depENTRADA_DT" Left="37,7953" Top="805,03989" Width="79,37013" Height="18,89765" DataField="ENTRADA_DT" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;ENTRADA_DT&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depVALOR_BASE" Left="196,53556" Top="805,03989" Width="79,37013" Height="18,89765" DataField="VALOR_BASE" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;VALOR_BASE&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depREF_SACAS" Left="385,51206" Top="805,03989" Width="98,26778" Height="18,89765" DataField="REF_SACAS" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;REF_SACAS&#34;]"/>
+    <TfrxMemoView Name="frxDBmerc_depOBSERVACAO" Left="41,57483" Top="842,83519" Width="400,63018" Height="18,89765" DataField="OBSERVACAO" DataSet="frxDBDataset3" DataSetName="frxDBmerc_dep" Text="[frxDBmerc_dep.&#34;OBSERVACAO&#34;]"/>
+  </TfrxReportPage>
+</TfrxReport>

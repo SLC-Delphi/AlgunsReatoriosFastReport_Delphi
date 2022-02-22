@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.7.37" DataSet="frxDBAPURA" DataSetName="frxDBAPURA" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42237,6326140162" ReportOptions.Description.Text="" ReportOptions.LastChange="42237,6360839352" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403980203546F7003480108446174617365747301010C2E00000020446174615365743D22667278444241505552412220446174615365744E616D653D22667278444241505552412200010C3A00000020446174615365743D22667278444246554E43494F4E4152494F2220446174615365744E616D653D22667278444246554E43494F4E4152494F220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="22,67718" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="22,67718" Top="0" Width="185,19697" Height="18,89765" ShowHint="False" Text="APURAÇÃO DE PONTO DE"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="30,23624" Left="0" Top="102,04731" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBAPURA" DataSetName="frxDBAPURA" RowCount="0"/>
+    <TfrxReportSummary Name="ReportSummary1" Height="22,67718" Left="0" Top="192,75603" Width="718,1107"/>
+  </TfrxReportPage>
+</TfrxReport>

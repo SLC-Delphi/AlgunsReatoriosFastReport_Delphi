@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.7.37" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3583" PreviewOptions.PagesInCache="20" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41334,430731331" ReportOptions.Description.Text="" ReportOptions.LastChange="42415,3183286458" ScriptLanguage="PascalScript" ScriptText.Text="procedure Picture1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;                                               &#13;&#10;end;&#13;&#10;&#13;&#10;procedure PIC_LOGODAFIRMAOnBeforePrint(Sender: TfrxComponent);&#13;&#10;var&#13;&#10;  vc_imagem:String;                                        &#13;&#10;begin&#13;&#10; // COMENTARIO&#13;&#10; vc_imagem:=&#60;frxDBDS_empresa.&#34;ICONE&#34;&#62;;                                           &#13;&#10; PIC_LOGODAFIRMA.FILELINK:=vc_Imagem;                                                                                                        &#13;&#10;end;&#13;&#10;&#13;&#10;procedure PageHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;VAR &#13;&#10;   vc_endereco:String;                &#13;&#10;begin&#13;&#10;   vc_endereco:=&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;;                                                                  &#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;VAR &#13;&#10;   vc_endereco:String;                &#13;&#10;begin&#13;&#10;   vc_endereco:=&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;;  &#13;&#10;   T_END.MEMO:=&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;;                                        &#13;&#10;end;&#13;&#10;&#13;&#10;procedure T_ENDOnBeforePrint(Sender: TfrxComponent);&#13;&#10;VAR &#13;&#10;   vc_endereco:String;                &#13;&#10;begin&#13;&#10;   vc_endereco:=&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;;  &#13;&#10;   //T_END.MEMO:=vc_endereco;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C656674025803546F70021008446174617365747301010C3A00000020446174615365743D22667278444244535F636C69656E7465732220446174615365744E616D653D22667278444244535F636C69656E7465732200010C3800000020446174615365743D22667278444244535F656D70726573612220446174615365744E616D653D22667278444244535F656D7072657361220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="15" ColumnWidth="190" ColumnPositions.Text="0" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" HGuides.Text="" VGuides.Text="" OnBeforePrint="PIC_LOGODAFIRMAOnBeforePrint">
+    <TfrxPageHeader Name="PageHeader1" Height="154,96073" Left="0" Top="18,89765" Width="718,1107" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxPictureView Name="PIC_LOGODAFIRMA" Left="9,448825" Top="0" Width="236,220625" Height="113,3859" OnBeforePrint="PIC_LOGODAFIRMAOnBeforePrint" ShowHint="False" Center="True" DataField="ICONE" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" HightQuality="False"/>
+      <TfrxMemoView Name="frxDBDS_empresaFANTASIA" Left="245,66945" Top="18,89765" Width="470,551181102362" Height="18,89765" ShowHint="False" DataField="FANTASIA" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" Text="[frxDBDS_empresa.&#34;FANTASIA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_empresaBAIRRO" Left="245,66945" Top="56,69295" Width="472,44125" Height="18,89765" ShowHint="False" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" Text="[&#60;frxDBDS_empresa.&#34;BAIRRO&#34;&#62; +' - ' + &#60;frxDBDS_empresa.&#34;CIDADE&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;ESTADO&#34;&#62;]"/>
+      <TfrxMemoView Name="frxDBDS_empresaCNPJ" Left="245,66945" Top="94,48825" Width="179,527675" Height="18,89765" ShowHint="False" DataField="CNPJ" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" Text="[frxDBDS_empresa.&#34;CNPJ&#34;]"/>
+      <TfrxMemoView Name="T_END" Left="245,66945" Top="37,7953" Width="472,44125" Height="18,89765" OnBeforePrint="T_ENDOnBeforePrint" ShowHint="False" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" Text="[&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo2" Left="245,66945" Top="75,5906" Width="472,44125" Height="18,89765" ShowHint="False" Text="[&#60;frxDBDS_empresa.&#34;CEP&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;TELEFONE&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;FAX&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo1" Left="255,118275" Top="0" Width="330,70859429" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="RELATÓRIO DE CLIENTES"/>
+      <TfrxLineView Name="Line1" Left="0" Top="147,40157480315" Width="718,110236220472" Height="0" ShowHint="False" Frame.Style="fsDouble" Frame.Typ="4" Frame.Width="1,5"/>
+      <TfrxMemoView Name="Date" Left="595,275975" Top="0" Width="60,47244094" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Time" Left="661,41775" Top="0" Width="56,69295" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" WordWrap="False" Text="[Time]"/>
+      <TfrxMemoView Name="Page" Left="670,866575" Top="120,944881889764" Width="47,244125" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Page#]"/>
+      <TfrxMemoView Name="Memo3" Left="623,62245" Top="120,944881889764" Width="47,244125" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Página:"/>
+      <TfrxMemoView Name="frxDBDS_empresaRELATORIO" Left="0" Top="120,94488189" Width="620,2206372" Height="18,89765" ShowHint="False" DataField="RELATORIO" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" WordWrap="False" Text="[frxDBDS_empresa.&#34;RELATORIO&#34;]"/>
+    </TfrxPageHeader>
+    <TfrxHeader Name="Header1" Height="79,37013" Left="0" Top="234,33086" Width="718,1107" ReprintOnNewPage="True">
+      <TfrxMemoView Name="Memo4" Left="0" Top="0" Width="377,95275591" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="CLIENTE"/>
+      <TfrxMemoView Name="Memo5" Left="377,953" Top="0" Width="330,70867972" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="ENDEREÇO"/>
+      <TfrxMemoView Name="Memo7" Left="0" Top="18,89765" Width="374,17322835" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Complemente / Bairro"/>
+      <TfrxMemoView Name="Memo9" Left="377,953" Top="18,89765" Width="328,81889764" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="CEP / CIDADE - ESTADO"/>
+      <TfrxMemoView Name="Memo11" Left="0" Top="37,7953" Width="132,28346457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="TELEFONE"/>
+      <TfrxMemoView Name="Memo12" Left="132,28355" Top="37,7953" Width="132,28346457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="FAX"/>
+      <TfrxMemoView Name="Memo13" Left="264,5671" Top="37,7953" Width="132,28346457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="CELULAR"/>
+      <TfrxMemoView Name="Memo14" Left="406,299475" Top="37,7953" Width="302,36215591" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="CONTATO"/>
+      <TfrxLineView Name="Line2" Left="0" Top="75,5906" Width="718,1107" Height="0" ShowHint="False" Frame.Style="fsDouble" Frame.Typ="4" Frame.Width="2"/>
+      <TfrxMemoView Name="Memo15" Left="0" Top="56,69295" Width="510,23646457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Width="1,5" ParentFont="False" Text="VENDEDOR"/>
+      <TfrxMemoView Name="Memo16" Left="651,968925" Top="56,69295" Width="66,14168957" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="LIMITE"/>
+      <TfrxMemoView Name="Memo17" Left="510,23655" Top="56,69295" Width="66,14168957" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="TABELA"/>
+      <TfrxMemoView Name="Memo18" Left="576,378325" Top="56,69295" Width="75,59051457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="PERCENTUAL"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" Height="81,259842519685" Left="0" Top="336,37817" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" RowCount="0">
+      <TfrxMemoView Name="frxDBDS_clientesFANTASIA" Left="0" Top="0" Width="374,17322835" Height="18,89765" ShowHint="False" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBDS_clientes.&#34;CLIENTE&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="377,953" Top="0" Width="338,26772264" Height="18,89765" ShowHint="False" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[&#60;frxDBDS_clientes.&#34;ENDERECO&#34;&#62; + ' - ' + &#60;frxDBDS_clientes.&#34;NUMERO&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo8" Left="0" Top="18,89765" Width="376,06302264" Height="18,89765" ShowHint="False" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" Text="[&#60;frxDBDS_clientes.&#34;COMPLEMENTO&#34;&#62; + ' / ' + &#60;frxDBDS_clientes.&#34;BAIRRO&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo10" Left="377,953" Top="18,89765" Width="336,37795276" Height="18,89765" ShowHint="False" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" Text="[&#60;frxDBDS_clientes.&#34;CEP&#34;&#62; + ' / ' + &#60;frxDBDS_clientes.&#34;CIDADE&#34;&#62;  + ' - ' + &#60;frxDBDS_clientes.&#34;ESTADO&#34;&#62;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesTELEFONE" Left="0" Top="37,7953" Width="132,283464566929" Height="18,89765" ShowHint="False" DataField="TELEFONE" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;TELEFONE&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesFAX" Left="132,28355" Top="37,7953" Width="132,28346457" Height="18,89765" ShowHint="False" DataField="FAX" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;FAX&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesCELULAR" Left="264,5671" Top="37,7953" Width="132,28346457" Height="18,89765" ShowHint="False" DataField="CELULAR" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;CELULAR&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesCONTATO" Left="406,299475" Top="37,7953" Width="311,81105413" Height="18,89765" ShowHint="False" DataField="CONTATO" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBDS_clientes.&#34;CONTATO&#34;]"/>
+      <TfrxLineView Name="Line3" Left="0" Top="77,4803149606299" Width="718,1107" Height="0" ShowHint="False" Frame.Style="fsDot" Frame.Typ="4"/>
+      <TfrxMemoView Name="frxDBDS_clientesVENDEDOR" Left="0" Top="56,69295" Width="510,23655" Height="18,89765" ShowHint="False" DataField="VENDEDOR" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;VENDEDOR&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesTABELA" Left="510,23655" Top="56,69295" Width="85,03937008" Height="18,89765" ShowHint="False" DataField="TABELA" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;TABELA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesPERCENTUAL" Left="595,275975" Top="56,69295" Width="47,24409449" Height="18,89765" ShowHint="False" DataField="PERCENTUAL" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" ParentFont="False" Text="[frxDBDS_clientes.&#34;PERCENTUAL&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_clientesLIMITE" Left="642,5201" Top="56,69295" Width="75,5906" Height="18,89765" ShowHint="False" DataField="LIMITE" DataSet="frxDBDS_clientes" DataSetName="frxDBDS_clientes" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Times New Roman" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDS_clientes.&#34;LIMITE&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" Height="49,13385827" Left="0" Top="480,00031" Width="718,1107">
+      <TfrxPictureView Name="PIC_LOGO" Left="0" Top="0" Width="132,28355" Height="47,244125" OnBeforePrint="Picture1OnBeforePrint" ShowHint="False" DataField="ICONE" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_empresa" FileLink="C:\DUPLAFACE_019\logo\imagemNOVA.bmp" HightQuality="False"/>
+      <TfrxMemoView Name="Memo19" Left="141,732375" Top="9,448825" Width="529,13411457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" VAlign="vaBottom" Text="DUPLA FACE SISTEMAS - www.duplafacesistemas.com.br"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
+[MRUFont]
+Font4=
+FontType4=0
+Font3=
+FontType3=0
+Font2=
+FontType2=0
+Font1=
+FontType1=0
+Font0=
+FontType0=0
+[Form5.TfrxObjectInspector]
+SplitPos=75
+Split1Pos=65
+Left=0
+Top=127
+Width=160
+Height=469
+Maximized=0
+Visible=1
+Dock5=LeftDockSite2
+[Form5.TfrxDesignerForm]
+Scale=1
+ShowGrid=1
+GridAlign=1
+ShowRulers=1
+ShowGuides=1
+Grid1=0,1
+Grid2=0,1
+Grid3=4
+Grid4=4
+Units=0
+ScriptFontName=Courier New
+ScriptFontSize=10
+MemoFontName=Arial
+MemoFontSize=10
+UseObjectFont=1
+WorkspaceColor=-16777211
+ToolsColor=-16777211
+GridLCD=0
+EditAfterInsert=1
+LocalizedOI=0
+RecentFiles=""
+FreeBands=0
+BandsGap=4
+ShowBandCaptions=1
+DropFields=1
+ShowStartup=1
+WatchList=
+Left=-8
+Top=-8
+Width=1376
+Height=754
+Maximized=1
+Visible=1
+Dock5=
+[Form5.TfrxDataTreeForm]
+Left=0
+Top=12
+Width=160
+Height=584
+Maximized=0
+Visible=1
+Dock5=RightDockSite
+[Form5.TfrxReportTreeForm]
+Left=0
+Top=12
+Width=160
+Height=99
+Maximized=0
+Visible=1
+Dock5=LeftDockSite2
+[Form5.TfrxWatchForm]
+Left=12
+Top=0
+Width=670
+Height=100
+Maximized=0
+Visible=1
+Dock5=CodeDockSite
+[ToolBar5.StandardTB]
+Float=0
+Visible=1
+Left=11
+Top=2
+Width=441
+Height=27
+Dock5=DockTop
+[ToolBar5.TextTB]
+Float=0
+Visible=1
+Left=0
+Top=27
+Width=654
+Height=27
+Dock5=DockTop
+[ToolBar5.FrameTB]
+Float=0
+Visible=1
+Left=651
+Top=27
+Width=346
+Height=27
+Dock5=DockTop
+[ToolBar5.AlignTB]
+Float=0
+Visible=1
+Left=465
+Top=2
+Width=385
+Height=27
+Dock5=DockTop
+[ToolBar5.ExtraToolsTB]
+Float=0
+Visible=0
+Left=901
+Top=2
+Width=0
+Height=2
+Dock5=DockTop
+[Dock5.LeftDockSite1]
+Data=00000400000000000000000000000000000000000000000000FFFFFFFF
+Width=0
+Height=619
+Size=100
+[Dock5.LeftDockSite2]
+Data=0000040000000000540200000000000001A000000000000000010000000073000000110000006672785265706F727454726565466F726D010000000054020000120000006672784F626A656374496E73706563746F72FFFFFFFF
+Width=160
+Height=596
+Size=100
+[Dock5.RightDockSite]
+Data=000004000000000000000000000000000000000000000000000100000000000000000F0000006672784461746154726565466F726DFFFFFFFF
+Width=160
+Height=596
+Size=100
+[Dock5.CodeDockSite]
+Data=000004000000000000000000000000000000000000000000000100000000000000000C0000006672785761746368466F726DFFFFFFFF
+Width=682
+Height=100
+Size=100

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.12.6" DotMatrixReport="False" IniFile="C:\Duplaface_019\Relat�rios\ABC1.0\RelABCVendasProdQtd1.fr3" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padr�o" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43949,5893079514" ReportOptions.Description.Text="" ReportOptions.LastChange="43956,8900828356" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403A00003546F70026008446174617365747301010C3800000020446174615365743D22667278444244535F656D70726573612220446174615365744E616D653D22667278444244535F456D70726573612200010C5000000020446174615365743D22667278444244535F52656C41424356656E64617350726F645174642220446174615365744E616D653D22667278444244535F52656C41424356656E64617350726F64517464220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="9,5" RightMargin="9,5" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="198,42523591" Left="0" Top="18,89765" Width="721,89023" OnBeforePrint="PageHeader1OnBeforePrint">
+      <TfrxPictureView Name="PIC_LOGODAFIRMA" Left="9,448825" Top="0" Width="221,102505" Height="113,3859" OnBeforePrint="PIC_LOGODAFIRMAOnBeforePrint" ShowHint="False" Center="True" DataField="ICONE" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="frxDBDS_empresaFANTASIA" Left="234,66945" Top="18,89765" Width="478,1102411" Height="18,89765" ShowHint="False" DataField="FANTASIA" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" Text="[frxDBDS_Empresa.&#34;FANTASIA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_empresaBAIRRO" Left="234,66945" Top="56,69295" Width="480,00031" Height="18,89765" ShowHint="False" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" Text="[&#60;frxDBDS_empresa.&#34;BAIRRO&#34;&#62; +' - ' + &#60;frxDBDS_empresa.&#34;CIDADE&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;ESTADO&#34;&#62;]"/>
+      <TfrxMemoView Name="frxDBDS_empresaCNPJ" Left="234,66945" Top="94,48825" Width="187,086735" Height="18,89765" ShowHint="False" DataField="CNPJ" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" Text="[frxDBDS_Empresa.&#34;CNPJ&#34;]"/>
+      <TfrxMemoView Name="T_END" Left="234,66945" Top="37,7953" Width="480,00031" Height="18,89765" OnBeforePrint="T_ENDOnBeforePrint" ShowHint="False" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" Text="[&#60;frxDBDS_empresa.&#34;ENDERECO&#34;&#62;+', '+&#60;frxDBDS_empresa.&#34;NUMERO&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo2" Left="234,66945" Top="75,5906" Width="480,00031" Height="18,89765" ShowHint="False" Text="[&#60;frxDBDS_empresa.&#34;CEP&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;TELEFONE&#34;&#62; +' - '+&#60;frxDBDS_empresa.&#34;FAX&#34;&#62;]"/>
+      <TfrxLineView Name="Line1" Left="0" Top="137,4015748" Width="718,11023622" Height="0" ShowHint="False" Frame.Typ="4" Frame.Width="2"/>
+      <TfrxMemoView Name="Date" Left="614,275975" Top="0" Width="60,47244094" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Time" Left="678,41775" Top="0" Width="37,7953" Height="18,89765" ShowHint="False" DisplayFormat.FormatStr="hh:mm" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[Time]"/>
+      <TfrxMemoView Name="Page" Left="670,866575" Top="98,94488189" Width="47,244125" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Page#]"/>
+      <TfrxMemoView Name="Memo3" Left="623,62245" Top="98,94488189" Width="47,244125" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Página:"/>
+      <TfrxMemoView Name="Memo7" Left="234,33086" Top="0" Width="377,953" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="RELATÓRIO CURVA ABC DE PRODUTOS MAIS VENDIDOS"/>
+      <TfrxMemoView Name="frxDBDS_RelABCVendasProdQtdDTPERIODO" Left="234,55133" Top="117,16543" Width="438,42548" Height="18,89765" ShowHint="False" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" Text="Período de: [frxDBDS_RelABCVendasProdQtd.&#34;DTPERIODO&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="4,33859" Top="176,53556" Width="710,55164" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haBlock" ParentFont="False" Text="que Abaixo se encontram distribuídos, por ordem de Quantidade Total Vendida por Produto dentro do Período"/>
+      <TfrxMemoView Name="Memo16" Left="3,77953" Top="139,84261" Width="257,00804" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="2" ParentFont="False" Text="OBSERVAÇÕES IMPORTANTES:"/>
+      <TfrxMemoView Name="Memo17" Left="4,22047" Top="158,456627" Width="691,65399" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Os produtos aqui apresentados são os que obtiveram MAIORES VENDAS neste período"/>
+    </TfrxPageHeader>
+    <TfrxPageFooter Name="PageFooter1" Height="49,13385827" Left="0" Top="506,45702" Width="721,89023">
+      <TfrxPictureView Name="PIC_LOGO" Left="0" Top="0" Width="132,28355" Height="47,244125" OnBeforePrint="Picture1OnBeforePrint" ShowHint="False" DataField="ICONE" DataSet="frxDBDS_empresa" DataSetName="frxDBDS_Empresa" FileLink="C:\DUPLAFACE_019\logo\imagemNOVA.bmp" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo19" Left="141,732375" Top="9,448825" Width="529,13411457" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" VAlign="vaBottom" Text="DUPLA FACE SISTEMAS - www.duplafacesistemas.com.br"/>
+      <TfrxMemoView Name="Memo4" Left="90,70872" Top="49,13389" Width="506,45682472" Height="26,45671" Visible="False" ShowHint="False" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Arial Rounded MT Bold" Font.Style="0" ParentFont="False" Text="RelABCVendasProdQtd1.fr3"/>
+      <TfrxLineView Name="Line3" Left="3,55906" Top="3,77953" Width="718,11023622" Height="0" ShowHint="False" Frame.Typ="4"/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData1" Height="26,45669291" Left="0" Top="347,71676" Width="721,89023" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" RowCount="0">
+      <TfrxMemoView Name="frxDBDS_RPerdasProdutosDetalhadoTOTALVENDAS" Left="7,55905512" Top="2,53543307" Width="90,70866142" Height="18,89765" ShowHint="False" DataField="TOTALVENDAS" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[frxDBDS_RelABCVendasProdQtd.&#34;TOTALVENDAS&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_RPerdasProdutosDetalhadoPROD_SERV" Left="113,38582677" Top="2,53543307" Width="302,36220472" Height="18,89765" ShowHint="False" DataField="PRODUTO" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" WordWrap="False" Text="[frxDBDS_RelABCVendasProdQtd.&#34;PRODUTO&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_RPerdasProdutosDetalhadoUNIDADE" Left="419,92913386" Top="2,53543307" Width="68,03146677" Height="18,89765" ShowHint="False" DataField="UNIDADE" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" Text="[frxDBDS_RelABCVendasProdQtd.&#34;UNIDADE&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_RPerdasProdutosDetalhadoVENDA" Left="494,69326" Top="2,53543307" Width="79,37013" Height="18,89765" ShowHint="False" DataField="VENDA" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[frxDBDS_RelABCVendasProdQtd.&#34;VENDA&#34;]"/>
+      <TfrxMemoView Name="frxDBDS_RPerdasProdutosDetalhadoTOTALVALOR_REAL" Left="601,50433" Top="2,53543307" Width="109,60637" Height="18,89765" ShowHint="False" DataField="TOTALVALOR" DataSet="frxDBDS_RelABCVendasProdQtd" DataSetName="frxDBDS_RelABCVendasProdQtd" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" HAlign="haRight" Text="[frxDBDS_RelABCVendasProdQtd.&#34;TOTALVALOR&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" Height="45,35436" Left="0" Top="279,68522" Width="721,89023" ReprintOnNewPage="True">
+      <TfrxMemoView Name="Memo1" Left="7,55906" Top="1,77953" Width="90,70872" Height="30,23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Quantidade&#13;&#10;Total Vendida"/>
+      <TfrxMemoView Name="Memo5" Left="113,38582677" Top="14,77953" Width="158,74026" Height="18,89765" ShowHint="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo6" Left="419,92913386" Top="14,77953" Width="71,81099677" Height="18,89765" ShowHint="False" Text="Unidade"/>
+      <TfrxLineView Name="Line2" Left="-0,22047" Top="42,45671" Width="718,11023622" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo8" Left="503,1342" Top="3,44094" Width="71,81099677" Height="30,23624" ShowHint="False" HAlign="haRight" Text="Preço de&#13;&#10;Venda"/>
+      <TfrxMemoView Name="Memo9" Left="608,50433" Top="3,77953" Width="98,26770677" Height="30,23624" ShowHint="False" HAlign="haRight" Text="Valor Total&#13;&#10;das Vendas"/>
+    </TfrxHeader>
+    <TfrxFooter Name="Footer1" Height="49,13385827" Left="0" Top="396,85065" Width="721,89023">
+      <TfrxMemoView Name="Memo20" Left="3,55906" Top="8" Width="94,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total:"/>
+      <TfrxLineView Name="Line5" Left="2,77953" Top="5,77953" Width="94,48825" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="5,66929134" Top="27,23624" Width="92,5984252" Height="18,89765" ShowHint="False" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[sUM(&#60;frxDBDS_RelABCVendasProdQtd.&#34;TOTALVENDAS&#34;&#62;,masterData1)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
+[Form4.TfrxObjectInspector]
+SplitPos=75
+Split1Pos=65
+Left=0
+Top=127
+Width=255
+Height=604
+Maximized=0
+Visible=1
+Dock4=LeftDockSite2
+[Form4.TfrxDesignerForm]
+Scale=1
+ShowGrid=1
+GridAlign=1
+ShowRulers=1
+ShowGuides=1
+Grid1=0,1
+Grid2=0,1
+Grid3=4
+Grid4=4
+Units=0
+ScriptFontName=Courier New
+ScriptFontSize=10
+MemoFontName=Arial
+MemoFontSize=10
+UseObjectFont=1
+WorkspaceColor=-16777211
+ToolsColor=-16777211
+GridLCD=0
+EditAfterInsert=1
+LocalizedOI=0
+RecentFiles="C:\Duplaface_019\Relat�rios\ABC1.0\RelABCVendasProdQtd1.fr3"
+FreeBands=0
+BandsGap=4
+ShowBandCaptions=1
+DropFields=1
+ShowStartup=1
+WatchList=
+Left=-8
+Top=-8
+Width=1616
+Height=886
+Maximized=1
+Visible=1
+Dock4=
+[Form4.TfrxDataTreeForm]
+Left=0
+Top=12
+Width=160
+Height=719
+Maximized=0
+Visible=1
+Dock4=RightDockSite
+[Form4.TfrxReportTreeForm]
+Left=0
+Top=12
+Width=255
+Height=99
+Maximized=0
+Visible=1
+Dock4=LeftDockSite2
+[Form4.TfrxWatchForm]
+Left=12
+Top=0
+Width=575
+Height=100
+Maximized=0
+Visible=1
+Dock4=CodeDockSite
+[ToolBar4.StandardTB]
+Float=0
+Visible=1
+Left=11
+Top=2
+Width=541
+Height=23
+Dock4=DockTop
+[ToolBar4.TextTB]
+Float=0
+Visible=1
+Left=11
+Top=29
+Width=639
+Height=23
+Dock4=DockTop
+[ToolBar4.FrameTB]
+Float=0
+Visible=1
+Left=663
+Top=29
+Width=293
+Height=23
+Dock4=DockTop
+[ToolBar4.AlignTB]
+Float=0
+Visible=0
+Left=565
+Top=2
+Width=308
+Height=23
+Dock4=DockTop
+[ToolBar4.ExtraToolsTB]
+Float=0
+Visible=0
+Left=886
+Top=2
+Width=0
+Height=0
+Dock4=DockTop
+[Dock4.LeftDockSite1]
+Data=00000400000000000000000000000000000000000000000000FFFFFFFF
+Width=0
+Height=754
+Size=100
+[Dock4.LeftDockSite2]
+Data=0000040000000000DB0200000000000001FF00000000000000010000000073000000110000006672785265706F727454726565466F726D0100000000DB020000120000006672784F626A656374496E73706563746F72FFFFFFFF
+Width=255
+Height=731
+Size=100
+[Dock4.RightDockSite]
+Data=000004000000000000000000000000000000000000000000000100000000000000000F0000006672784461746154726565466F726DFFFFFFFF
+Width=160
+Height=731
+Size=100
+[Dock4.CodeDockSite]
+Data=000004000000000000000000000000000000000000000000000100000000000000000C0000006672785761746368466F726DFFFFFFFF
+Width=587
+Height=100
+Size=100
